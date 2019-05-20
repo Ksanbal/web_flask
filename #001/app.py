@@ -10,8 +10,11 @@ def hello_world():
 
 @app.route('/<a>') # /뒤로 입력받는 문자를 표시하는 페이지
 def first_page(a):
-    print(dir(request.user_agent))
-    return render_template('Index.html', a=a)
+    if a == 't':
+        return 'Nope'
+    else:
+        print(dir(request.user_agent))
+        return render_template('Index.html', a=a)
 
 
 if __name__ == '__main__':
