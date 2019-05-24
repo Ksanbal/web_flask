@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+# from flask import Flask, render_template, request
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -24,7 +25,7 @@ def hel():
     db.session.commit()
     return user.username
 
-
+# db.create_all()
 @app.before_first_request
 def fi():
     print("first")
@@ -46,7 +47,8 @@ def all1():
         print(_.username)
     return 'x'
 
-# # db.create_all()
+
+#
 # @app.route('/') # 아무것도 입력하지 않았을 때 상태.
 # def hello_world():
 #     return 'Hello World!'
@@ -60,7 +62,6 @@ def all1():
 #         print(dir(request.user_agent))
 #         return render_template('Index.html', a=a)
 #
-
 
 if __name__ == '__main__':
     app.run()
