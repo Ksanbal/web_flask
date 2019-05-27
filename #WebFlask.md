@@ -65,7 +65,7 @@ def first_page(a):
 
 if __name__ == '__main__':
     app.run()
-```---## #002
+```
 
 
 
@@ -73,51 +73,52 @@ if __name__ == '__main__':
 ### SQLAlcemy
 #### 데이터 자료형 타입의 종류
 ##### Generic Types
-1. BigInteger
-2. Boolean
-3. Date
-4. DateTime
-5. Enum
-6. Float
-7. Integer
-8. Interval
-9. LargeBinary
-10. MatchType
-11. Numeric
-12. PickleType
-13. SchemaType
-14. SmallInteger
-15. Text
-16. Time
-17. Unicode
-18. UnicodeText
+1. BigInteger : 데이터의 크기가 큰 int integers
+2. Boolean : True와 False로 나타내는 datatype
+3. Date : 년,월,일의 날짜를 나타내는 타입
+4. DateTime : 날짜와 시간의 조합
+5. Enum : 열거형,  서로 관련이 있는 상수들의 집합
+6. Float : 실수
+7. Integer : 정수
+8. Interval : 두 date간의 차이를 나타내는 기간
+9. LargeBinary : 데이터의 크기가 큰 binary (2진수)
+10. MatchType 
+11. Numeric : 고정 소수점 
+12. PickleType : bytes로 쓰여진 객체를 읽고 쓸 수 있는 타입
+13. SchemaType : 
+14. SmallInteger : 데이터의 크기가 작은 int integers
+15. String : 연속된 문자열을 쓸 수 있는 타입
+16. Text : 가변적인 사이즈의 string 타입
+17. Time : 시,분,초의 시간을 나타내는 타입
+18. Unicode : 가변적인 길이의 유니코드 string 타입
+19. UnicodeText : 무한한 길이의 유니코드 string 타입
 
 
 ##### Standard & Multiple Vendor Type
-1. ARRAY
-2. BIGINT
-3. BINARY
-4. BLOB
-5. BOOLEAN
-6. CHAR
-7. CLOB
-8. DATE
-9. DATETIME
-10. DECIMAL
+1. ARRAY : 배열
+2. BIGINT : 8바이트의 SQL int 타입
+3. BINARY 
+4. BLOB : SQL 블랍(binard large object), 커다란 파일
+5. BOOLEAN 
+6. CHAR 
+7. CLOB : SQL Clob
+8. DATE 
+9. DATETIME 
+10. DECIMAL 
 11. FLOAT
-12. INT
-13. JSON
+12. INT : 4바이트의 SQL int 타입
+13. JSON : 
 14. INTEGER
-15. NCHAR
-16. NVARCHAR
+15. NCHAR : n자로 고정된 유니코드 문자
+16. NVARCHAR : n개의 가변 유니코드 문자
 17. NUMERIC
-18. REAL
-19. SMALLINT
+18. REAL : 4바이트의 부동소수점 
+19. SMALLINT : 2바이트의 SQL int 타입
 20. TEXT
 21. TIME
-22. TIMESTAMP
-23. VARBINARY
-24. VARCHAR
+22. TIMESTAMP : 타임스탬핑을 통해 특정 시각을 가진 문자열 
+23. VARBINARY : 가변형 binary
+24. VARCHAR : 가변형 char
 
 ##### Vendor-Specific Types
 
@@ -175,4 +176,4 @@ def all1():
     for _ in x:
         print(_.username)
     return 'x'
-```---
+```

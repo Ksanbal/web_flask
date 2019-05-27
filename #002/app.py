@@ -12,7 +12,6 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String, unique=True, nullable=False)
     email = db.Column(db.String, unique=True, nullable=False)
-    test - db.Column(db.)
 
     def __str__(self):
         return '<User%>'%self.username
