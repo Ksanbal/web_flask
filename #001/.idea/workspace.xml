@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eae5402-9102-4834-8416-6c6751d12e6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6bcc4756-78db-4bb8-8054-04121d98adfb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d3a5f5f-7b49-442b-b846-73998b555eeb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bd470b7c-b79c-4a61-a54c-35fde30fd200.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c97f4b52-6f2c-43ac-9fce-a359262083a5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../#001_WebFlask.md" beforeDir="false" afterPath="$PROJECT_DIR$/../#001_WebFlask.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../#002/.idea/#002.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/#001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/#001.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.sqlite" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,10 +56,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="315">
+              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
-                <element signature="e#52#56#0" expanded="true" />
+                <element signature="e#52#75#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://5515fd3f-7b8f-49d6-bd63-62d2ce9e3840/schema/main/table/test">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="053d6393-c5af-4b32-85dc-b960812f02c8">
+            <state projectRestartId="64b65ff9-c86e-48f3-8222-fe793e8a5f8d">
               <filtering />
             </state>
           </provider>
@@ -78,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_sqlalchemy/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14896">
+            <state relative-caret-position="11760">
               <caret line="807" column="11" selection-start-line="807" selection-start-column="11" selection-end-line="807" selection-end-column="11" />
             </state>
           </provider>
@@ -87,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="90">
               <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
@@ -117,10 +116,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="60" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
+    <option name="x" value="747" />
+    <option name="y" value="23" />
+    <option name="width" value="693" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -152,6 +151,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -250,21 +250,25 @@
       <workItem from="1558346205538" duration="1027000" />
       <workItem from="1558577321937" duration="6418000" />
       <workItem from="1558674018518" duration="1182000" />
+      <workItem from="1558807918208" duration="277000" />
+      <workItem from="1558853910275" duration="42000" />
+      <workItem from="1558854354815" duration="70000" />
+      <workItem from="1558947422169" duration="1079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8627000" />
+    <option name="totallyTimeSpent" value="10095000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="33" width="1295" height="695" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15602264" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16452074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22202487" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32738853" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22165605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -280,15 +284,15 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.32983023" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.3297568" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/_001$app.coverage" NAME="app Coverage Results" MODIFIED="1558948491988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/_001$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1558581835263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/_001$app.coverage" NAME="app Coverage Results" MODIFIED="1558584590712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py">
@@ -298,46 +302,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8884e50-3249-4a99-8831-6b6a157ade8f/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8884e50-3249-4a99-8831-6b6a157ade8f/console.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c9d04366-160f-44f1-a225-1f92b14ef7d9/console.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6bcc4756-78db-4bb8-8054-04121d98adfb/console.sql" />
+    <entry file="file://$PROJECT_DIR$/#002.py" />
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="e#52#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c9d04366-160f-44f1-a225-1f92b14ef7d9/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6bcc4756-78db-4bb8-8054-04121d98adfb/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="das://5515fd3f-7b8f-49d6-bd63-62d2ce9e3840/schema/main/table/test">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="64b65ff9-c86e-48f3-8222-fe793e8a5f8d">
+          <filtering />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask_sqlalchemy/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14896">
+        <state relative-caret-position="11760">
           <caret line="807" column="11" selection-start-line="807" selection-start-column="11" selection-end-line="807" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="90">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5515fd3f-7b8f-49d6-bd63-62d2ce9e3840/schema/main/table/test">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="053d6393-c5af-4b32-85dc-b960812f02c8">
-          <filtering />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/#002.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#52#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
