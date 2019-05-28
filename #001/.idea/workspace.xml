@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eae5402-9102-4834-8416-6c6751d12e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../#002/.idea/#002.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/#001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/#001.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../#002/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../#002/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../#002/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../#002/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="158">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="e#52#75#0" expanded="true" />
               </folding>
@@ -68,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://5515fd3f-7b8f-49d6-bd63-62d2ce9e3840/schema/main/table/test">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="64b65ff9-c86e-48f3-8222-fe793e8a5f8d">
+            <state projectRestartId="225f4c92-50f5-48da-9248-f3bd56879e89">
               <filtering />
             </state>
           </provider>
@@ -116,10 +116,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="747" />
-    <option name="y" value="23" />
-    <option name="width" value="693" />
-    <option name="height" value="877" />
+    <option name="x" value="7" />
+    <option name="y" value="35" />
+    <option name="width" value="1433" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -254,21 +254,24 @@
       <workItem from="1558853910275" duration="42000" />
       <workItem from="1558854354815" duration="70000" />
       <workItem from="1558947422169" duration="1079000" />
+      <workItem from="1559038241055" duration="547000" />
+      <workItem from="1559039750770" duration="674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10095000" />
+    <option name="totallyTimeSpent" value="11316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16452074" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16881259" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32738853" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22165605" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20963855" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,14 +287,14 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/_001$app.coverage" NAME="app Coverage Results" MODIFIED="1558948491988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/_001$app.coverage" NAME="app Coverage Results" MODIFIED="1559038900276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/_001$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1558581835263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="editorHistoryManager">
@@ -306,19 +309,9 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c9d04366-160f-44f1-a225-1f92b14ef7d9/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6bcc4756-78db-4bb8-8054-04121d98adfb/console.sql" />
     <entry file="file://$PROJECT_DIR$/#002.py" />
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="e#52#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://5515fd3f-7b8f-49d6-bd63-62d2ce9e3840/schema/main/table/test">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="64b65ff9-c86e-48f3-8222-fe793e8a5f8d">
+        <state projectRestartId="225f4c92-50f5-48da-9248-f3bd56879e89">
           <filtering />
         </state>
       </provider>
@@ -334,6 +327,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#52#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

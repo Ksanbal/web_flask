@@ -1,20 +1,20 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-
 app = Flask(__name__)
-app.config["SQLALCHEMY DATANASE_URI"] = "sqlite:///example.sqlite" # app.config : 설정값
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 db = SQLAlchemy(app)
+
+db.create_all()
 
 
 class User(db.Model):
-    __tablename__ = 'test'
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String, unique=True, nullable=False)
-    email = db.Column(db.String, unique=True, nullable=False)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
 
-    def __str__(self):
-        return '<User%>'%self.username
+    def __repr__(self):
+        return '<User %r>' % self.username
 
 
 @app.route('/')
@@ -24,11 +24,11 @@ def hello_world():
     db.session.commit()
     return user.username
 
-
-@app.before_first_request
-def fi():
-    print("first")
-    db.create_all()
+#
+# @app.before_first_request
+# def fi():
+#     print("first")
+#     db.create_all()
 
 #
 # @app.route('/')

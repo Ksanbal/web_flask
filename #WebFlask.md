@@ -1,4 +1,9 @@
 #WebFlask
+
+
+#001
+#002
+
 ## #001
 ### http 프로토콜이란
 * 클라이언트(브라우저)와 서버 간 데이터를 주고 받는 방식
@@ -67,13 +72,13 @@ if __name__ == '__main__':
     app.run()
 ```
 
-
+- - - -
 
 # #002
 ### SQLAlcemy
 #### 데이터 자료형 타입의 종류
 ##### Generic Types
-1. BigInteger : 데이터의 크기가 큰 int integers
+1. BigInteger : 데이터의 크기가 큰 int integers (8바이트)
 2. Boolean : True와 False로 나타내는 datatype
 3. Date : 년,월,일의 날짜를 나타내는 타입
 4. DateTime : 날짜와 시간의 조합
@@ -82,11 +87,11 @@ if __name__ == '__main__':
 7. Integer : 정수
 8. Interval : 두 date간의 차이를 나타내는 기간
 9. LargeBinary : 데이터의 크기가 큰 binary (2진수)
-10. MatchType 
+10. MatchType : 
 11. Numeric : 고정 소수점 
 12. PickleType : bytes로 쓰여진 객체를 읽고 쓸 수 있는 타입
-13. SchemaType : 
-14. SmallInteger : 데이터의 크기가 작은 int integers
+13. SchemaType :  
+14. SmallInteger : 데이터의 크기가 작은 int integers (2바이트)
 15. String : 연속된 문자열을 쓸 수 있는 타입
 16. Text : 가변적인 사이즈의 string 타입
 17. Time : 시,분,초의 시간을 나타내는 타입
@@ -126,7 +131,40 @@ if __name__ == '__main__':
 
 
 ### WTF
-#### 폼의 종류
+#### 필드의 종류
+- Field : 데이터베이스 테이블에서 데이터가 있는 Column, Atrribute와 같이 열을 나타내는 것
+##### Base Field
+- BooleanField
+- DateField : datetime.date, 날짜
+- DatetimeField : datetime.datetime, 날짜와 시간의 조합
+- DcimalField : decimal.Decimal을 받는 텍스트 필드
+- FileField : 파일을 저장한다.
+- MutipleFileField : 여러 파일을 저장할 수 있는 필드
+- FloatField : float를 저장하는 필드
+- IntegerField : 정수로 저장하는 필드
+- RadioField : SelectField와 비슷하지만, 라디오 버튼을의 목록을 보여준다.
+- SelectField : 값과 레이블로 이루어진 선택들을 쌍으로 가진다. 값은 어떤것이 와도 된다.
+- SelectMultipleField : SelectField와 같지만 여러 선택을 가질 수 있다.
+- SubmitField : Submit 버튼이 눌리는 것을 체크하는 필드
+- StringField : 텍스트를 받는 필드
+
+##### Convenience Field
+- HiddenField : String필드이지만 입력창이 보이지 않는 필드이다.
+- PasswordField : 입력되는 값을 브라우저에서 보여주지 않는 필드이다.
+- TextAreaField : 여러줄을 입력 받을 수 있는 텍스트 필드.
+
+##### Field Enclosures
+- FormField : 데이터 폼을 저장하는 필드
+- FieldList : 필드의 인스턴스를 list로 저장하는 필드
+
+##### Custom Field
+- 내가 수정할 수 있는 필드.
+
+
+
+
+
+
 ```python
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy

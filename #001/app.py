@@ -25,27 +25,30 @@ def hel():
     db.session.commit()
     return user.username
 
-# db.create_all()
-@app.before_first_request
-def fi():
-    print("first")
-    db.create_all()
 
+db.create_all()
 
-@app.route('/')
-def all1():
-    # x = User.query.all()
-    x = User.query.filter(User.username == 'moon').all()
+#
+# @app.before_first_request
+# def fi():
+#     print("first")
+#     db.create_all()
 
-    x.username = 'sun'
-    db.session.commit()
-
-    db.session.remove(x)
-    db.session.commit()
-    print(x)
-    for _ in x:
-        print(_.username)
-    return 'x'
+#
+# @app.route('/')
+# def all1():
+#     # x = User.query.all()
+#     x = User.query.filter(User.username == 'moon').all()
+#
+#     x.username = 'sun'
+#     db.session.commit()
+#
+#     db.session.remove(x)
+#     db.session.commit()
+#     print(x)
+#     for _ in x:
+#         print(_.username)
+#     return 'x'
 
 
 #
