@@ -1,13 +1,12 @@
-#WebFlask
-
-
-#001
-#002
+# WebFlask
+## 순서링크 
+1. [1. #001](#￼￼#001)
+2. [2. #002](￼#002)
 
 ## #001
 ### http 프로토콜이란
 * 클라이언트(브라우저)와 서버 간 데이터를 주고 받는 방식
-* Stateless Protocall
+* Stateless Protocol
 	* 각각의 데이터 요청이 서로 독립적이다.
 	* 서버가 정보를 추가적으로 관리하지 않아도 되고, 다수의 요청 처리 및 서버의 부하를 줄일 수 있는 성능의 이점이 있다.
 	* but, http 쿠키를 이용해 데이터간의 상호작용을 하는 세션을 만들 수 있다.
@@ -20,6 +19,7 @@
 * 인증 : WWW-Authenticate 또는 유사한 헤더, http 쿠키를 이용해 특정세션에서 특정 사용자만 접근할 수 있게 한다.
 * 프록시와 터널링
 * 세션 : 쿠키를 사용하여 http가 기본적으로 Stateless 프로토콜이지만 세션을 만들어 준다.
+
 ### Request와 Response
 #### 1. Request
 * Client(Browser) to Server
@@ -46,10 +46,11 @@ options : 서버 옵션들을 확인하기 위한 요청, CORS에서 사용한�
 >   
 > 4xx - 클라이언트 에러  
 >   
-> 5xx - 서버 에러* 구성 : protocol's version, Status code, Statu message, Headers  
-### template langauge (jinja2)
+> 5xx - 서버 에러 구성 : protocol's version, Status code, Status message, Headers  
+### template language (jinja2)
 ### orm (SQLAlchemy)
 - SQL문인 아닌 객체지향 언어를 사용해서 관리할 수 있게 해준다.
+
 ```python
 from flask import Flask, render_template, request
 
@@ -74,10 +75,12 @@ if __name__ == '__main__':
 
 - - - -
 
-# #002
-### SQLAlcemy
+## #002
+### SQLAlchemy
 #### 데이터 자료형 타입의 종류
-##### Generic Types
+##### 1. Generic Types
+###### - Python 타입의 데이터 타입
+###### - 만약 대상 DB에서 없는 자료형을 사용할 경우 비슷한 타입으로 생성가능하다.
 1. BigInteger : 데이터의 크기가 큰 int integers (8바이트)
 2. Boolean : True와 False로 나타내는 datatype
 3. Date : 년,월,일의 날짜를 나타내는 타입
@@ -87,10 +90,10 @@ if __name__ == '__main__':
 7. Integer : 정수
 8. Interval : 두 date간의 차이를 나타내는 기간
 9. LargeBinary : 데이터의 크기가 큰 binary (2진수)
-10. MatchType : 
+10. MatchType : ?
 11. Numeric : 고정 소수점 
 12. PickleType : bytes로 쓰여진 객체를 읽고 쓸 수 있는 타입
-13. SchemaType :  
+13. SchemaType :  ?
 14. SmallInteger : 데이터의 크기가 작은 int integers (2바이트)
 15. String : 연속된 문자열을 쓸 수 있는 타입
 16. Text : 가변적인 사이즈의 string 타입
@@ -98,21 +101,22 @@ if __name__ == '__main__':
 18. Unicode : 가변적인 길이의 유니코드 string 타입
 19. UnicodeText : 무한한 길이의 유니코드 string 타입
 
-
-##### Standard & Multiple Vendor Type
+##### 2.  Standard & Multiple Vendor Type
+###### - 대상 DB에 상관없이 사용하는 타입,
+###### - 원하는 타입을 정확하게 지정할 수 있으나, 대상 DB에 없을 경우 작동하지 않을 수 있다.
 1. ARRAY : 배열
 2. BIGINT : 8바이트의 SQL int 타입
 3. BINARY 
-4. BLOB : SQL 블랍(binard large object), 커다란 파일
+4. BLOB : DB 외부에 바이너리 타입으로 이루어진 파일을 저장하는 타입
 5. BOOLEAN 
 6. CHAR 
-7. CLOB : SQL Clob
+7. CLOB : DB 외부에 문자열 타입으로 대용량 파일을 저장하는 타입
 8. DATE 
 9. DATETIME 
 10. DECIMAL 
 11. FLOAT
 12. INT : 4바이트의 SQL int 타입
-13. JSON : 
+13. JSON : JSON 파일을 저장 할 수 있고, 관계형 구조로 JSON 문서를 분석하고 가져올 수 있다.
 14. INTEGER
 15. NCHAR : n자로 고정된 유니코드 문자
 16. NVARCHAR : n개의 가변 유니코드 문자
@@ -125,44 +129,39 @@ if __name__ == '__main__':
 23. VARBINARY : 가변형 binary
 24. VARCHAR : 가변형 char
 
-##### Vendor-Specific Types
-
-
+##### 3. Vendor-Specific Types
+###### - 각 DB에 맞춰서 DB 패키지 안에 명시되어 있는 타입을 사용한다.
 
 
 ### WTF
 #### 필드의 종류
-- Field : 데이터베이스 테이블에서 데이터가 있는 Column, Atrribute와 같이 열을 나타내는 것
-##### Base Field
-- BooleanField
-- DateField : datetime.date, 날짜
-- DatetimeField : datetime.datetime, 날짜와 시간의 조합
-- DcimalField : decimal.Decimal을 받는 텍스트 필드
-- FileField : 파일을 저장한다.
-- MutipleFileField : 여러 파일을 저장할 수 있는 필드
-- FloatField : float를 저장하는 필드
-- IntegerField : 정수로 저장하는 필드
-- RadioField : SelectField와 비슷하지만, 라디오 버튼을의 목록을 보여준다.
-- SelectField : 값과 레이블로 이루어진 선택들을 쌍으로 가진다. 값은 어떤것이 와도 된다.
-- SelectMultipleField : SelectField와 같지만 여러 선택을 가질 수 있다.
-- SubmitField : Submit 버튼이 눌리는 것을 체크하는 필드
-- StringField : 텍스트를 받는 필드
+###### - Field : 데이터베이스 테이블에서 데이터가 있는 Column, Attribute 와 같이 열을 나타내는 것
+##### 1. Base Field
+1. BooleanField : True, False로 저장되는 필드
+2. DateField : datetime.date, 날짜
+3. DatetimeField : datetime.datetime, 날짜와 시간의 조합
+4. DecimalField : decimal.Decimal을 받는 텍스트 필드
+5. FileField : 파일을 저장한다.
+6. MultipleFileField : 여러 파일을 저장할 수 있는 필드
+7. FloatField : float를 저장하는 필드
+8. IntegerField : 정수로 저장하는 필드
+9. RadioField : SelectField와 비슷하지만, 라디오 버튼을의 목록을 보여준다.
+10. SelectField : 값과 레이블로 이루어진 선택들을 쌍으로 가진다. 값은 어떤것이 와도 된다.
+11. SelectMultipleField : SelectField와 같지만 여러 선택을 가질 수 있다.
+12. SubmitField : Submit 버튼이 눌리는 것을 체크하는 필드
+13. StringField : 텍스트를 받는 필드
 
-##### Convenience Field
-- HiddenField : String필드이지만 입력창이 보이지 않는 필드이다.
-- PasswordField : 입력되는 값을 브라우저에서 보여주지 않는 필드이다.
-- TextAreaField : 여러줄을 입력 받을 수 있는 텍스트 필드.
+##### 2. Convenience Field
+1. HiddenField : String필드이지만 입력창이 보이지 않는 필드이다.
+2. PasswordField : 입력되는 값을 브라우저에서 보여주지 않는 필드이다.
+3. TextAreaField : 여러줄을 입력 받을 수 있는 텍스트 필드.
 
-##### Field Enclosures
-- FormField : 데이터 폼을 저장하는 필드
-- FieldList : 필드의 인스턴스를 list로 저장하는 필드
+##### 3. Field Enclosures
+1. FormField : 데이터 폼을 저장하는 필드
+2. FieldList : 필드의 인스턴스를 list로 저장하는 필드
 
-##### Custom Field
+##### 4. Custom Field
 - 내가 수정할 수 있는 필드.
-
-
-
-
 
 
 ```python
