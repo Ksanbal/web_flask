@@ -1,4 +1,5 @@
 # WebFlask
+
 ## #001
 ### http 프로토콜이란
 * 클라이언트(브라우저)와 서버 간 데이터를 주고 받는 방식
@@ -47,6 +48,7 @@ options : 서버 옵션들을 확인하기 위한 요청, CORS에서 사용한�
 ### orm (SQLAlchemy)
 - SQL문인 아닌 객체지향 언어를 사용해서 관리할 수 있게 해준다.
 
+1. app.py
 ```python
 from flask import Flask, render_template, request
 
@@ -67,6 +69,20 @@ def first_page(a):
 
 if __name__ == '__main__':
     app.run()
+```
+
+2. index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ a }}</h1>
+</body>
+</html>
 ```
 
 - - - -
@@ -159,7 +175,7 @@ if __name__ == '__main__':
 ##### 4. Custom Field
 - 내가 수정할 수 있는 필드.
 
-
+1. app.py
 ```python
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -210,3 +226,103 @@ def all1():
         print(_.username)
     return 'x'
 ```
+
+### Doc 링크
+- Flask-SQLAlchemy :  [https://flask-sqlalchemy.palletsprojects.com/en/2.x/](https://flask-sqlalchemy.palletsprojects.com/en/2.x/) 
+- Flask-WTF : [Flask-WTF — Flask-WTF 0.14](https://flask-wtf.readthedocs.io/en/stable/)
+
+- - - -
+
+# #003
+## Admin 페이지 Custom하기
+1. app.py 
+```python
+from flask import Flask
+from flask_admin import AdminIndexView #Admin 페이지 Home
+from flask_admin.contrib.sqlamodel import ModelView
+from extesnsions import admin, db
+from models import User
+import config
+
+app = Flask(__name__)
+
+
+app.config['SQLALCHEMY_DATABASE_URI'] = config.DATABASE_FILE
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = '123456790'
+app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'  # 부트스트립에서 지원하는 테마
+
+
+db.init_app(app)
+admin.init_app(app)  # init를 통해 Flask와 연동하겠다
+
+
+class UserModelView(ModelView):  # Admin 페이지에서 보이는 기능 수정
+    can_create = True
+    can_edit = True
+    can_delete = True
+    can_view_details = True
+    can_export = True
+    create_modal = True
+
+
+admin.add_view(UserModelView(User, db.session))
+
+
+# adminIndexview = AdminIndexView(name='admin2') #Admin의 Home 페이지 수정
+# admin.add_view(adminIndexview)
+
+
+@app.before_first_request
+def db_creat():
+    db.create_all()
+
+
+@app.route('/')  # 첫화면
+def hello_world():
+    return 'Hello World!'
+
+
+if __name__ == '__main__':
+    app.run()
+
+```
+
+2. config.py : DB 관련 연결 모음 파일
+```python
+DATABASE_FILE = ‘sqlite:///test.db’
+```
+
+3. models.py : DB 내용 관리 파일
+```python
+from extesnsions import db
+
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    first_name = db.Column(db.String(100))
+    last_name = db.Column(db.String(100))
+    email = db.Column(db.String(120), unique=True)
+    # pets = db.relationship(‘Pet’, backref=‘owner’)
+
+    def __str__(self):
+        return “{}, {}”.format(self.last_name, self.first_name)
+
+    def __repr__(self):
+        return “{}: {}”.format(self.id, self.__str__())
+```
+
+4. Extensions.py  : 각종 import 관리 파일
+```python
+#설치전용 파일
+from flask_admin import Admin
+from flask_sqlalchemy import SQLAlchemy
+
+
+admin = Admin(name=“Admin : DB Views”, template_mode=‘bootstrap3’)
+db = SQLAlchemy()
+```
+
+### Doc 링크
+- Flask-Admin : [Flask-Admin — flask-admin 1.5.3 documentation](https://flask-admin.readthedocs.io/en/latest/)
+- - - -
